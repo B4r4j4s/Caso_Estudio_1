@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="static/iconos/pila-de-libros.png" width="30" height="30" class="d-inline-block align-top" alt="Logo">
+      </a>
+      <form class="d-flex mx-auto">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-outline-success" type="submit">
+            <i class="fas fa-search"></i> 
+          </button>
+          
+      </form>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Iniciar Sesión</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  {% block body %}
+    
+  {% endblock %}
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-jZNNE7I5zB6HkDj6XYC5z7Y5X6tku5Yx6s5B2f8qF2t3JCLuz6U6EA5vFz3PM/sF" crossorigin="anonymous"></script>
+</body>
+</html>

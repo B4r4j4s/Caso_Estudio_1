@@ -1,0 +1,15 @@
+{% extends './navbar.html' %}
+{% block title %}Bookstore{% endblock %}
+{% block body %}
+<h1>Hola wei</h1>
+<h2>{{ <data class="bienvenida"></data> }}</h2>
+{%  if data.numero_cursos  0 %}
+<ul>
+    {% for c in data.cursos %}
+    <li>{{ c }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<h2>No hay cursos... </h2>
+{% endif %}
+{% endblock %}
